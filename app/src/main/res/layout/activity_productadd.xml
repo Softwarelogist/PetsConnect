@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Productadd">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="@color/blue"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="#FFFFFF" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="378dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar6">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/productimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/productlabel"
+                    android:layout_marginTop="2dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/placeholder" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/buttondesign"
+                    android:text="Add product image"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextproductname"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/roundbackdark"
+                    android:ems="10"
+                    android:hint="Product name"
+                    android:inputType="textPersonName"
+                    android:padding="5dp"
+                    android:textColorHint="#605B5B" />
+
+                <EditText
+                    android:id="@+id/editTextTextprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/roundbackdark"
+                    android:ems="10"
+                    android:hint="Price"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp"
+                    android:textColorHint="#605B5B" />
+
+                <EditText
+                    android:id="@+id/editTextTextdiscount"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/roundbackdark"
+                    android:ems="10"
+                    android:hint="Discount"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp"
+                    android:textColorHint="#605B5B" />
+
+                <TextView
+                    android:id="@+id/discountprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/roundbackdark"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:padding="5dp"
+                    android:textColorHint="#605B5B"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/editTextTextproductdescription"
+                    android:layout_width="350dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/roundbackdark"
+                    android:ems="10"
+                    android:hint="Product description"
+                    android:inputType="textPersonName"
+                    android:maxLines="4"
+                    android:padding="5dp"
+                    android:textColorHint="#605B5B" />
+
+
+                <Spinner
+                    android:id="@+id/categorySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:autofillHints="Catagory"
+                    android:padding="5dp"
+                    android:textColorHint="#605B5B"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <RadioGroup
+                    android:id="@+id/availability_radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp">
+
+                    <RadioButton
+                        android:id="@+id/single_radio_button"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Single" />
+
+                    <RadioButton
+                        android:id="@+id/list_radio_button"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Stock" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="35dp"
+                    android:background="@drawable/buttondesign"
+                    android:text="Add product"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar7"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="@color/blue"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar7"
+        tools:srcCompat="@drawable/placeholder" />
+    <TextView
+        android:id="@+id/productlabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Product Name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/productImage"
+        app:layout_constraintStart_toStartOf="@+id/productImage"
+        app:layout_constraintTop_toBottomOf="@+id/productImage"/>
+    <TextView
+        android:id="@+id/productactuallprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Product Price"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/productlabel"
+        app:layout_constraintStart_toStartOf="@+id/productlabel"
+        app:layout_constraintTop_toBottomOf="@+id/productlabel"  />
+
+    <TextView
+        android:id="@+id/productdiscount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productactuallprice"
+        android:layout_marginTop="8dp"
+        android:text="Discount"
+
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/productactuallprice"
+        app:layout_constraintTop_toBottomOf="@+id/productactuallprice" />
+
+
+
+    <TextView
+        android:id="@+id/productDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Loading details..."
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/productdiscount"
+        app:layout_constraintStart_toStartOf="@+id/productdiscount"
+        app:layout_constraintTop_toBottomOf="@+id/productdiscount" />
+
+    <Button
+        android:id="@+id/addToCartBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:text="Add to Cart"
+        android:textColor="#FFFDFD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

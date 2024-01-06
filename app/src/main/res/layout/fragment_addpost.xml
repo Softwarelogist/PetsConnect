@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.addpost">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Create Post"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnpost"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnpost" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnpost"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/btnpost"
+        android:enabled="false"
+        android:padding="10dp"
+        android:text="Post"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <view
+        android:id="@+id/view9"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#B8B7B7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnpost" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/uprofile"
+        android:layout_width="@dimen/_50mdp"
+        android:layout_height="@dimen/_50mdp"
+        android:layout_marginTop="8dp"
+
+        android:src="@drawable/placeholder"
+        app:civ_border_color="#B8BEC1"
+        app:civ_border_width="5dp"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/view9" />
+
+    <TextView
+        android:id="@+id/uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="@dimen/_12font_mdp"
+        app:layout_constraintBottom_toTopOf="@+id/uprofeesion"
+        app:layout_constraintStart_toEndOf="@+id/uprofile"
+        app:layout_constraintTop_toTopOf="@+id/uprofile"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/uprofeesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/uprofile"
+        app:layout_constraintStart_toStartOf="@+id/uname"
+        app:layout_constraintTop_toBottomOf="@+id/uname" />
+
+    <EditText
+        android:id="@+id/postdes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="what's on your mind ?"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/postimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/uprofile"
+        app:layout_constraintTop_toBottomOf="@+id/uprofile" />
+
+
+    <ImageView
+        android:id="@+id/postimage"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/prrot"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnaddimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uprofile"
+        app:layout_constraintVertical_bias="0.496" />
+
+
+    <VideoView
+        android:id="@+id/postvideo"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnaddimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uprofile" />
+
+    <view
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#B8B7B7"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btnaddimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnaddimage"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="68dp"
+        android:src="@drawable/addimg"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnaddvideo" />
+
+    <ImageView
+        android:id="@+id/btnaddvideo"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/video"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/btnaddimage"
+        app:layout_constraintEnd_toStartOf="@+id/btnaddimage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnaddlocation"
+        app:layout_constraintTop_toTopOf="@+id/btnaddimage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/btnaddlocation"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/location"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/btnaddvideo"
+        app:layout_constraintEnd_toStartOf="@+id/btnaddvideo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/btnaddvideo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Add to your post"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/btnaddimage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnaddimage"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

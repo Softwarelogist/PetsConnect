@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="_4mdp">6.40dp</dimen>
+    <dimen name="_6mdp">9.60dp</dimen>
+    <dimen name="_8mdp">12.80dp</dimen>
+    <dimen name="_10mdp">16.00dp</dimen>
+    <dimen name="_12mdp">19.20dp</dimen>
+	<dimen name="_13mdp">20.80dp</dimen>
+    <dimen name="_15mdp">24.00dp</dimen>
+	<dimen name="_16mdp">25.60dp</dimen>
+    <dimen name="_18mdp">28.80dp</dimen>
+    <dimen name="_20mdp">32.00dp</dimen>
+    <dimen name="_45mdp">72.00dp</dimen>
+    <dimen name="_48mdp">76.80dp</dimen>
+    <dimen name="_50mdp">80.00dp</dimen>
+    <dimen name="_60mdp">96.00dp</dimen>
+    <dimen name="_70mdp">112.00dp</dimen>
+    <dimen name="_100mdp">160.00dp</dimen>
+    <dimen name="_230mdp">368.00dp</dimen>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="_7font_mdp">14.00sp</dimen>
+    <dimen name="_10font_mdp">20.00sp</dimen>
+    <dimen name="_12font_mdp">24.00sp</dimen>
+    <dimen name="_14font_mdp">28.00sp</dimen>
+    <dimen name="_18font_mdp">36.00sp</dimen>
+</resources>

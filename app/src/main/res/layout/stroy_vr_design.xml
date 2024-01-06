@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/addStoryImage"
+        android:layout_width="@dimen/_50mdp"
+        android:layout_height="@dimen/_50mdp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="2dp"
+        android:foregroundGravity="center"
+        android:padding="1dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/statuscircle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44"
+        app:riv_corner_radius="360dip"
+        app:riv_mutate_background="true"
+        app:riv_oval="false"
+        tools:ignore="MissingConstraints" />
+
+
+    <com.devlomi.circularstatusview.CircularStatusView
+        android:id="@+id/statuscircle"
+        android:layout_width="78dp"
+        android:layout_height="72dp"
+        app:layout_constraintBottom_toBottomOf="@+id/addStoryImage"
+        app:layout_constraintEnd_toEndOf="@+id/addStoryImage"
+        app:layout_constraintStart_toStartOf="@id/addStoryImage"
+        app:layout_constraintTop_toTopOf="@+id/addStoryImage"
+        app:portion_color="#DD02026C"
+        app:portion_spacing="5dp"
+        app:portion_width="3dp"
+        app:portions_count="10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

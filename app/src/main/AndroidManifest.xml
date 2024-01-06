@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.taas.petsconnect" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31" >
+        <activity
+            android:name=".OrderActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Petsconnect" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ShopStatusActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Petsconnect" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".chatwindo"
+            android:exported="false"
+            android:theme="@style/Theme.Petsconnect" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".setting"
+            android:exported="false"
+            android:theme="@style/Theme.Petsconnect" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MessageActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Petsconnect" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Petsconnect" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CheckoutActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Petsconnect" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CartActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Petsconnect" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity> <!-- Firebase configuration -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:value="#FF0000" /> <!-- Replace with your desired color value -->
+        <!-- Set the default theme for the application -->
+        <!-- ... -->
+        <activity
+            android:name=".Productadd"
+            android:exported="false"
+            android:theme="@style/Theme.Petsconnect" />
+        <activity
+            android:name=".OTPverification"
+            android:exported="false"
+            android:theme="@style/Theme.Petsconnect" />
+        <activity
+            android:name=".postarticle"
+            android:exported="false"
+            android:theme="@style/Theme.Petsconnect" />
+        <activity
+            android:name=".ArticlesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Petsconnect" />
+        <activity
+            android:name=".ShopRegistrationActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Petsconnect" />
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProductDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Petsconnect" />
+        <activity
+            android:name=".ReplyCommentActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Petsconnect" />
+        <activity
+            android:name=".CommentActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Petsconnect" />
+        <activity
+            android:name=".Signup"
+            android:exported="false"
+            android:theme="@style/Theme.Petsconnect" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Petsconnect" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Petsconnect" />
+        <activity
+            android:name=".activity_splash"
+            android:exported="true"
+            android:theme="@style/Theme.Petsconnect" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

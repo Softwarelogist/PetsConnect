@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Signup">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="414dp"
+        android:layout_height="126dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sinuppng" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="8dp"
+        android:text="Create a new account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutname"
+        android:layout_width="362dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/roundbackdark"
+        android:hint="Full name"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textColorHint="@color/blue"
+        app:boxBackgroundColor="@color/blue"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/blue"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/blue"
+        app:errorIconDrawable="@drawable/baseline_cancel_24"
+        app:errorIconTint="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayoutprofession"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.01999998"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        app:startIconTint="@color/blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/uname"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:background="@android:color/transparent"
+            android:maxLines="1"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="16sp"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutprofession"
+        android:layout_width="362dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/roundbackdark"
+        android:hint="Profession"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textColorHint="@color/blue"
+        android:visibility="visible"
+        app:boxBackgroundColor="@color/blue"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/blue"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/blue"
+        app:errorIconDrawable="@drawable/baseline_cancel_24"
+        app:errorIconTint="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutname"
+        app:startIconDrawable="@drawable/baseline_work_24"
+        app:startIconTint="@color/blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/uprofeesion"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:background="@android:color/transparent"
+            android:maxLines="1"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="16sp"
+            tools:ignore="DuplicateIds,SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutemail"
+        android:layout_width="362dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/roundbackdark"
+        android:hint="Email"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textColorHint="@color/blue"
+        app:boxBackgroundColor="@color/blue"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/blue"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/blue"
+        app:errorIconDrawable="@drawable/baseline_cancel_24"
+        app:errorIconTint="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayoutpass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutprofession"
+        app:layout_constraintVertical_bias="1.0"
+        app:startIconDrawable="@drawable/baseline_email_24"
+        app:startIconTint="@color/blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_email"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:background="@android:color/transparent"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="16sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutphone"
+        android:layout_width="362dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/roundbackdark"
+        android:hint="Mobile"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textColorHint="@color/blue"
+        app:boxBackgroundColor="@color/blue"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/blue"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/blue"
+        app:errorIconDrawable="@drawable/baseline_cancel_24"
+        app:errorIconTint="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayoutpass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutemail"
+        app:layout_constraintVertical_bias="1.0"
+        app:startIconDrawable="@drawable/baseline_local_phone_24"
+        app:startIconTint="@color/blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_phone"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:background="@android:color/transparent"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="16sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutpass"
+        android:layout_width="362dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/roundbackdark"
+        android:hint="Password"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        app:boxBackgroundColor="@color/blue"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/blue"
+        app:boxStrokeErrorColor="@color/blue"
+        app:counterEnabled="true"
+        app:counterMaxLength="8"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/blue"
+        app:errorIconDrawable="@drawable/baseline_remove_red_eye_24"
+        app:errorIconTint="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/btn_signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutphone"
+        app:startIconDrawable="@drawable/baseline_lock_24"
+        app:startIconTint="@color/blue">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_password"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:background="@android:color/transparent"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="16sp"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="351dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/buttondesign"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutpass" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="106dp"
+        android:layout_height="17dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Alrady registerdf '?"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnalradyhaveacc"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/btnalradyhaveacc"
+        android:layout_width="40dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="8dp"
+        android:paddingTop="6dp"
+        android:text="Login"
+        android:textAlignment="textEnd"
+        android:textColor="#0C0C53"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

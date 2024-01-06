@@ -1,0 +1,481 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".ShopRegistrationActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:background="@color/blue"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="413dp"
+        android:layout_height="113dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4"
+        app:srcCompat="@drawable/shopping" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="423dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="376dp"
+                android:layout_height="126dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="#F3F2F2"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="Shop registration fee is 2000 PKR . plz pay Registration fee in Easypaisa,JazzCash,NayaPay or SadaPay Acc:Tital Team TAAS Acc no: 03********* "
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutpament"
+                android:layout_width="0dp"
+                android:layout_height="59dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/roundbackdark"
+                android:hint="Payment Trx id"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColorHint="#080B0C"
+                app:boxBackgroundColor="@color/blue"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/blue"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/blue"
+                app:errorIconDrawable="@drawable/baseline_cancel_24"
+                app:errorIconTint="@color/blue"
+                app:hintTextColor="#2196F3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16"
+                app:startIconDrawable="@drawable/baseline_payment_24"
+                app:startIconTint="@color/blue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/paymentTrxid"
+                    android:layout_width="350dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:inputType="number"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:minHeight="48dp"
+                    android:padding="5dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:textSize="16sp"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutsenderacc"
+                android:layout_width="0dp"
+                android:layout_height="59dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/roundbackdark"
+                android:hint="Account Number"
+                android:inputType="number"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColorHint="#080B0C"
+                app:boxBackgroundColor="@color/blue"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/blue"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/blue"
+                app:errorIconDrawable="@drawable/baseline_cancel_24"
+                app:errorIconTint="@color/blue"
+                app:hintTextColor="#2196F3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutpament"
+                app:startIconDrawable="@drawable/baseline_account_balance_wallet_24"
+                app:startIconTint="@color/blue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/senderaccEditText"
+                    android:layout_width="350dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:minHeight="48dp"
+                    android:padding="5dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:textSize="16sp"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutacctitle"
+                android:layout_width="0dp"
+                android:layout_height="59dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/roundbackdark"
+                android:hint="Account holder"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColorHint="#080B0C"
+                app:boxBackgroundColor="@color/blue"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/blue"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/blue"
+                app:errorIconDrawable="@drawable/baseline_cancel_24"
+                app:errorIconTint="@color/blue"
+                app:hintTextColor="#2196F3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutsenderacc"
+                app:startIconDrawable="@drawable/baseline_account_circle_24"
+                app:startIconTint="@color/blue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/accounttitleEditText"
+                    android:layout_width="350dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:minHeight="48dp"
+                    android:padding="5dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:textSize="16sp"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutbankname"
+                android:layout_width="0dp"
+                android:layout_height="59dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/roundbackdark"
+                android:hint="Easypaisa,jazzcash or other"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textColorHint="#080B0C"
+                app:boxBackgroundColor="@color/blue"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/blue"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/blue"
+                app:errorIconDrawable="@drawable/baseline_cancel_24"
+                app:errorIconTint="@color/blue"
+                app:hintTextColor="#2196F3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutacctitle"
+                app:startIconDrawable="@drawable/baseline_account_balance_24"
+                app:startIconTint="@color/blue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/banknameEditText"
+                    android:layout_width="350dp"
+                    android:layout_height="55dp"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:minHeight="48dp"
+                    android:padding="5dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:textSize="16sp"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <ImageView
+                android:id="@+id/receiptimage"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutbankname" />
+
+            <Button
+                android:id="@+id/paymentbtn"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@color/blue"
+                android:padding="12dp"
+                android:text="Add Payment Recipition"
+                android:textColor="#FFFFFF"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/receiptimage" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="385dp"
+                android:layout_height="430dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:visibility="visible"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/paymentbtn">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="50dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayoutshopname"
+                        android:layout_width="match_parent"
+                        android:layout_height="59dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="35dp"
+                        android:background="@drawable/roundbackdark"
+                        android:hint="Shop name"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textColorHint="@color/blue"
+                        app:boxBackgroundColor="@color/blue"
+                        app:boxBackgroundMode="outline"
+                        app:boxStrokeColor="@color/blue"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/blue"
+                        app:errorIconDrawable="@drawable/baseline_cancel_24"
+                        app:errorIconTint="@color/blue"
+                        app:hintTextColor="#2196F3"
+                        app:layout_constraintBottom_toTopOf="@+id/textInputLayoutprofession"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView12"
+                        app:layout_constraintVertical_bias="0.01999998"
+                        app:startIconDrawable="@drawable/baseline_shopping_bag_24"
+                        app:startIconTint="@color/blue">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/shopNameEditText"
+                            android:layout_width="350dp"
+                            android:layout_height="55dp"
+                            android:layout_margin="5dp"
+                            android:background="@android:color/transparent"
+                            android:maxLines="1"
+                            android:minHeight="48dp"
+                            android:padding="5dp"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp"
+                            android:textSize="16sp"
+                            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayoutdescripition"
+                        android:layout_width="match_parent"
+                        android:layout_height="59dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="35dp"
+                        android:background="@drawable/roundbackdark"
+                        android:hint="Descripition"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textColorHint="@color/blue"
+                        app:boxBackgroundColor="@color/blue"
+                        app:boxBackgroundMode="outline"
+                        app:boxStrokeColor="@color/blue"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/blue"
+                        app:errorIconDrawable="@drawable/baseline_cancel_24"
+                        app:errorIconTint="@color/blue"
+                        app:hintTextColor="#2196F3"
+                        app:layout_constraintBottom_toTopOf="@+id/textInputLayoutprofession"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView12"
+                        app:layout_constraintVertical_bias="0.01999998"
+                        app:startIconDrawable="@drawable/baseline_description_24"
+                        app:startIconTint="@color/blue">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/descriptionEditText"
+                            android:layout_width="350dp"
+                            android:layout_height="55dp"
+                            android:layout_margin="5dp"
+                            android:background="@android:color/transparent"
+                            android:inputType="textMultiLine|textPersonName"
+                            android:maxLines="2"
+                            android:minHeight="48dp"
+                            android:padding="5dp"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp"
+                            android:textSize="16sp"
+                            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayoutlocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="59dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="35dp"
+                        android:background="@drawable/roundbackdark"
+                        android:hint="Location"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textColorHint="@color/blue"
+                        app:boxBackgroundColor="@color/blue"
+                        app:boxBackgroundMode="outline"
+                        app:boxStrokeColor="@color/blue"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/blue"
+                        app:errorIconDrawable="@drawable/baseline_cancel_24"
+                        app:errorIconTint="@color/blue"
+                        app:hintTextColor="#2196F3"
+                        app:layout_constraintBottom_toTopOf="@+id/textInputLayoutprofession"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView12"
+                        app:layout_constraintVertical_bias="0.01999998"
+                        app:startIconDrawable="@drawable/baseline_location_on_24"
+                        app:startIconTint="@color/blue">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/locationEditText"
+                            android:layout_width="350dp"
+                            android:layout_height="55dp"
+                            android:layout_margin="5dp"
+                            android:background="@android:color/transparent"
+                            android:maxLines="1"
+                            android:minHeight="48dp"
+                            android:padding="5dp"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp"
+                            android:textSize="16sp"
+                            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textInputLayoutshopephone"
+                        android:layout_width="match_parent"
+                        android:layout_height="59dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="35dp"
+                        android:background="@drawable/roundbackdark"
+                        android:hint="Mobile"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:textColorHint="@color/blue"
+                        app:boxBackgroundColor="@color/blue"
+                        app:boxBackgroundMode="outline"
+                        app:boxStrokeColor="@color/blue"
+                        app:endIconMode="clear_text"
+                        app:endIconTint="@color/blue"
+                        app:errorIconDrawable="@drawable/baseline_cancel_24"
+                        app:errorIconTint="@color/blue"
+                        app:hintTextColor="#2196F3"
+                        app:layout_constraintBottom_toTopOf="@+id/textInputLayoutprofession"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView12"
+                        app:layout_constraintVertical_bias="0.01999998"
+                        app:startIconDrawable="@drawable/baseline_local_phone_24"
+                        app:startIconTint="@color/blue">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/shopephoneitText"
+                            android:layout_width="350dp"
+                            android:layout_height="55dp"
+                            android:layout_margin="5dp"
+                            android:background="@android:color/transparent"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:minHeight="48dp"
+                            android:padding="5dp"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp"
+                            android:textSize="16sp"
+                            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/registerShopButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="59dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="35dp"
+                        android:background="@color/blue"
+                        android:padding="5dp"
+                        android:text="Register Shop"
+                        android:textColor="#FFFFFF" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

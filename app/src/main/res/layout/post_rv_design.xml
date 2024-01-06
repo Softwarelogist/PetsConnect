@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/uprofile"
+        android:layout_width="@dimen/_50mdp"
+        android:layout_height="@dimen/_50mdp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="6dp"
+        android:src="@drawable/placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/statuscircle"
+        android:layout_width="@dimen/_50mdp"
+        android:layout_height="@dimen/_50mdp"
+        android:background="@drawable/bg_circle"
+        android:padding="4dp"
+        app:layout_constraintBottom_toBottomOf="@id/uprofile"
+        app:layout_constraintEnd_toEndOf="@id/uprofile"
+        app:layout_constraintStart_toStartOf="@+id/uprofile"
+        app:layout_constraintTop_toTopOf="@+id/uprofile" />
+
+    <TextView
+        android:id="@+id/uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Team TAAS"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/uprofile"
+        app:layout_constraintStart_toEndOf="@+id/uprofile"
+        app:layout_constraintTop_toTopOf="@+id/uprofile"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <TextView
+        android:id="@+id/uprofeesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developer Team"
+        android:textColor="#302E2E"
+        app:layout_constraintStart_toStartOf="@+id/uname"
+        app:layout_constraintTop_toBottomOf="@+id/uname" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/uprofile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/uprofile"
+        app:srcCompat="@drawable/ic_more" />
+
+    <TextView
+        android:id="@+id/postdes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Post detail"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uprofile" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/postimage"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:adjustViewBounds="true"
+        android:alpha="0.9"
+        android:src="@drawable/ddpro"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/view10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postdes"
+        app:riv_corner_radius="7dip"
+        tools:ignore="MissingConstraints" />
+
+
+    <VideoView
+        android:id="@+id/postvideo"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="15dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/view10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postdes"
+        app:riv_corner_radius="7dip" />
+
+    <view
+        android:id="@+id/view10"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/postimage" />
+
+    <TextView
+        android:id="@+id/likecomment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:drawableLeft="@drawable/ic_like"
+        android:drawablePadding="10dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="15"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/view8"
+        app:layout_constraintStart_toStartOf="@+id/view10"
+        app:layout_constraintTop_toBottomOf="@+id/view10" />
+
+    <TextView
+        android:id="@+id/commentText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:drawableLeft="@drawable/ic_chat"
+        android:drawablePadding="10dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="15"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/likecomment"
+        app:layout_constraintStart_toEndOf="@id/likecomment"
+        app:layout_constraintTop_toTopOf="@+id/likecomment" />
+
+    <TextView
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:drawableLeft="@drawable/ic_share"
+        android:drawablePadding="10dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="15"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/commentText"
+        app:layout_constraintStart_toEndOf="@id/commentText"
+        app:layout_constraintTop_toTopOf="@+id/commentText" />
+
+    <ImageView
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/view8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/share"
+        app:layout_constraintTop_toTopOf="@+id/view10"
+        app:srcCompat="@drawable/ic_bookmark" />
+
+    <view
+        android:id="@+id/view8"
+        class="androidx.appcompat.widget.ActionMenuView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

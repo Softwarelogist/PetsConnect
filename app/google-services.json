@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "651563379851",
+    "project_id": "petsconnect--158712taas",
+    "storage_bucket": "petsconnect--158712taas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651563379851:android:4958e201157c349026b88e",
+        "android_client_info": {
+          "package_name": "com.taas.petsconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651563379851-jotelc6qvr9sligqq6f44pkne2hp2tvc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDETFgnNl93GS0hfNNjzI-dJ7qL63MKfew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "651563379851-jotelc6qvr9sligqq6f44pkne2hp2tvc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

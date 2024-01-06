@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="37dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="199dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/tpcpng"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="204dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="12dp"
+
+                android:layout_marginTop="16dp"
+                android:paddingEnd="@dimen/_50mdp"
+                android:text="PetsConnect "
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_20mdp"
+                android:textStyle="bold|italic"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/info"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="#0D174188"
+                app:cardCornerRadius="25sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+                app:layout_constraintEnd_toStartOf="@+id/message"
+                app:layout_constraintTop_toTopOf="@+id/imageView6"
+                tools:ignore="ExtraText">>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/info" />
+            </androidx.cardview.widget.CardView>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/uprofile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/profilepic"
+                app:layout_constraintBottom_toBottomOf="@+id/message"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/message" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/message"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="#0D174188"
+                app:cardCornerRadius="25sp"
+                app:layout_constraintBottom_toBottomOf="@+id/info"
+                app:layout_constraintEnd_toStartOf="@+id/uprofile"
+                app:layout_constraintTop_toTopOf="@+id/info">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/petmessage"
+                    android:layout_gravity="center"
+                  />
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/derkGrey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fillViewport="true"
+                android:isScrollContainer="false"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/addStoryImage"
+                            android:layout_width="73dp"
+                            android:layout_height="73dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/placeholder"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/view3"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0"
+                            app:riv_corner_radius="360dip"
+                            app:riv_mutate_background="true"
+                            app:riv_oval="false"
+                            tools:ignore="MissingConstraints" />
+
+                        <View
+                            android:id="@+id/view3"
+                            android:layout_width="70dp"
+                            android:layout_height="72dp"
+                            android:background="@drawable/blackshade"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/addStoryImage"
+                            app:layout_constraintStart_toStartOf="@+id/addStoryImage"
+                            app:layout_constraintTop_toTopOf="@+id/addStoryImage"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <ImageView
+                            android:id="@+id/productimg"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:adjustViewBounds="false"
+                            android:background="#FFFFFF"
+                            android:backgroundTint="#FFFEFE"
+                            android:backgroundTintMode="screen"
+                            android:src="@drawable/ic_place"
+                            app:layout_constraintBottom_toBottomOf="@+id/addStoryImage"
+                            app:layout_constraintEnd_toEndOf="@+id/addStoryImage"
+                            app:layout_constraintStart_toStartOf="@+id/addStoryImage"
+                            app:layout_constraintTop_toTopOf="@+id/addStoryImage"
+                            app:layout_constraintVertical_bias="0.39" />
+
+                        <TextView
+                            android:layout_width="59dp"
+                            android:layout_height="18dp"
+                            android:text="Create a Story"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_7font_mdp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/addStoryImage"
+                            app:layout_constraintEnd_toEndOf="@+id/addStoryImage"
+                            app:layout_constraintStart_toStartOf="@+id/addStoryImage"
+                            app:layout_constraintTop_toTopOf="@id/addStoryImage"
+                            app:layout_constraintVertical_bias="0.78" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/storyRV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:padding="1dp">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/derkGrey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/postRV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="14dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view4" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
